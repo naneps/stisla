@@ -79,8 +79,46 @@ a:not(.btn-social-icon):not(.btn-social):not(.page-link) .fab {
   margin-left: 4px;
 }
 
+/* create var primary color and secondary */
+:root {
+  --primary: #141D3E;
+  --secondary: #f5f5f5;
+  --success: #29CC97;
+  --danger: #F12B2C;
+  --warning: #EAB448;
+  --info: #05c1ff;
+  --light: #f5f5f5;
+  --dark: #343a40;
+  --white: #fff;
+  --black: #000;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --gray-light: #f5f5f5;
+  --gray-lighter: #f8f9fa;
+  --gray-lightest: #fafafa;
+  --gray-darker: #6c757d;
+  --gray-darkest: #343a40;
+  --gray-darker-2: #2e3446;
+  --gray-darker-3: #1c1e24;
+  --gray-darker-4: #0d0e13;
+  --gray-darker-5: #0a0a0a;
+  --gray-darker-6: #080810;
+  --gray-darker-7: #0a0a0a;
+  --gray-darker-8: #0a0a0a;
+  --gray-darker-9: #0a0a0a;
+  --gray-darker-10: #0a0a0a;
+  --gray-darker-11: #0a0a0a;
+  --gray-darker-12: #0a0a0a;
+  --gray-darker-13: #0a0a0a;
+  --gray-darker-14: #0a0a0a;
+  --gray-darker-15: #0a0a0a;
+  --gray-darker-16: #0a0a0a;
+  --gray-darker-17: #0a0a0a;
+  --gray-darker-18: #0a0a0a;
+}
+
 .bg-primary {
-  background-color: #6777ef !important;
+  background-color: #141D3E !important;
 }
 
 .bg-secondary {
@@ -3063,7 +3101,7 @@ body.sidebar-mini .main-sidebar:after {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   content: " ";
   position: fixed;
-  background-color: #fff;
+  background-color: var(---primary) !important;
   width: 65px;
   height: 100%;
   left: 0;
@@ -3132,8 +3170,8 @@ body.sidebar-mini .main-sidebar .sidebar-menu > li > a.has-dropdown:after {
 }
 body.sidebar-mini .main-sidebar .sidebar-menu > li.active > a {
   box-shadow: 0 4px 8px #acb5f6;
-  background-color: #6777ef;
-  color: #fff;
+  background-color: var(---primary);
+  color:var(--warning);
 }
 body.sidebar-mini .main-sidebar .sidebar-menu > li ul.dropdown-menu {
   position: absolute;
@@ -3383,7 +3421,7 @@ body.layout-3 .main-footer {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-weight: 700;
-  color: #000;
+  color: var(--white);
 }
 .main-sidebar .sidebar-user {
   display: inline-block;
@@ -3408,7 +3446,7 @@ body.layout-3 .main-footer {
 }
 .main-sidebar .sidebar-menu li.menu-header {
   padding: 3px 15px;
-  color: #a1a8ae;
+  color: var(--white);
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -3425,7 +3463,7 @@ body.layout-3 .main-footer {
   padding: 0 20px;
   width: 100%;
   letter-spacing: 0.3px;
-  color: #78828a;
+  color: var(--white);
   text-decoration: none;
 }
 .main-sidebar .sidebar-menu li a .badge {
@@ -3443,10 +3481,10 @@ body.layout-3 .main-footer {
   width: 100%;
 }
 .main-sidebar .sidebar-menu li a:hover {
-  background-color: #f8fafb;
+  background-color: var(--warning);
 }
 .main-sidebar .sidebar-menu li.active a {
-  color: #6777ef;
+  color: var(--warning);
   font-weight: 600;
   background-color: #f8fafb;
 }
